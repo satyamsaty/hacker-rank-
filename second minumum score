@@ -1,0 +1,28 @@
+list =[]
+scores=set()
+second_list=[]
+if __name__ == '__main__':
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        list.append([name,score])
+        scores.add(score)
+
+#print(scores)
+second_min = sorted(scores)[1]
+#print(second_min)
+
+for key,value in list:
+    if value == second_min:
+        second_list.append(key)
+#print(second_list)
+
+for item in sorted(second_list):
+    print(item)
+
+
+
+
+        
+
+
